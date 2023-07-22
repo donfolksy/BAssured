@@ -1,0 +1,739 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.link-style {
+  text-decoration: none;
+}
+/* styling of hero section */
+.hero-section {
+  font-family: var(--font-family);
+  background-color: var(--purple-color);
+  color: var(--white);
+  /* border-bottom-left-radius:2cm ; */
+  /* border-bottom-right-radius:2cm; */
+}
+.hero-section img {
+  width: 400px;
+}
+.hero-section h5 {
+  font-size: 50px;
+  font-weight: 500;
+  width: 400px;
+}
+.hero-section p {
+  font-size: 13px;
+  width: 350px;
+}
+.hero-section button {
+  border: none;
+  border-radius: 5px;
+  width: 180px;
+  height: 40px;
+  color: var(--purple-color);
+  font-size: 25px;
+  font-weight: 700;
+}
+.hero-section button:hover {
+  background-color: var(--purple-color);
+  color: var(--white);
+  border: 3px solid white;
+}
+
+/* stlying of features */
+.features-parent {
+  background-color: #e5e5e5;
+  position: relative;
+}
+/* .features-parent img{
+  width: 100px;
+
+  }  */
+.features {
+  background-color: #e5e5e5;
+  font-family: var(--font-family);
+  color: var(--purple-color);
+}
+.features img {
+  width: 380px;
+}
+.features h5 {
+  font-size: 35px;
+  font-weight: 600;
+  width: 400px;
+}
+.features p {
+  font-size: 15px;
+  width: 250px;
+}
+.ft-1 img {
+  width: 150px;
+  height: 400px;
+  position: absolute;
+  right: 0;
+  bottom: 30%;
+}
+.ft-2 img {
+  width: 100px;
+  position: absolute;
+  left: 0;
+}
+/* styling of products */
+
+.product {
+  background-color: var(--light-purple);
+  color: var(--purple-color);
+  font-family: var(--font-family);
+}
+.product img {
+  width: 400px;
+  height: 300px;
+}
+.product h4 {
+  font-size: 40px;
+  font-weight: 700;
+}
+.product p {
+  font-size: 15px;
+  width: 300px;
+}
+.product-btn {
+  gap: 3rem;
+}
+.not-active-button {
+  border: 2px solid white;
+  background-color: var(--purple-color);
+  color: var(--white);
+  height: 50px;
+  width: 180px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.active-button {
+  border: 2px solid white;
+  color: var(--purple-color);
+  background-color: var(--white);
+  height: 50px;
+  width: 180px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.prodOne a {
+  text-decoration: none;
+  /* color: var(--purple-color); */
+}
+.btn-1 {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.btn-5 {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.product-sec2 button {
+  color: var(--purple-color);
+  border: none;
+  border-radius: 10px;
+  width: 180px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 600;
+  border: 2px solid white;
+}
+.product-sec2 button:hover {
+  background-color: var(--purple-color);
+  color: var(--white);
+}
+
+/* styling of Testimonial */
+.testimonial {
+  font-family: var(--font-family);
+  background-color: #e5e5e5;
+  color: var(--purple-color);
+}
+.testimonial-border {
+  border: 2px solid white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 9px rgba(253, 215, 255, 0.3);
+}
+.testimonial-border img {
+  width: 70px;
+}
+.testimonial p {
+  font-size: 14px;
+  text-align: center;
+}
+.testimonial h4 {
+  font-size: 30px;
+  font-weight: 700;
+}
+.testimonial h6 {
+  font-size: 12px;
+  width: 300px;
+  text-align: center;
+}
+/* styling of Footerbar */
+
+.footer-bar {
+  background-color: var(--purple-color);
+  color: var(--white);
+  font-family: var(--font-family);
+  height: 40vh;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  padding-top: 100px;
+}
+.footer-one {
+  position: relative;
+}
+.img-position img {
+  /* width: 100%;  */
+  height: 300px;
+  display: block;
+}
+.img-position {
+  position: absolute;
+  bottom: 32%;
+  right: 5;
+  left: 0rem;
+}
+/* .img-position-two {
+  position: absolute;
+  bottom: 60%;
+  right: 5;
+}
+.img-position-two img {
+  width: 100%;
+  height: 200px;
+display: block;
+}  */
+
+/* styling of product form */
+.form-block h4 {
+  color: var(--purple-color);
+  font-family: var(--font-family);
+}
+.form-block p {
+  font-size: 15px;
+  font-family: var(--font-family);
+  color: var(--purple-color);
+}
+
+.form-block input {
+  width: 700px;
+  height: 40px;
+  border-radius: 5px;
+  border: solid 2px var(--purple-color);
+}
+.custom-input::placeholder {
+  color: var(--purple-color);
+}
+
+.form-block button {
+  background-color: var(--purple-color);
+  color: white;
+  border-radius: 5px;
+  border: none;
+  width: 100px;
+  height: 35px;
+}
+
+/* styling of product Hero  */
+.product-hero {
+  background-color: var(--purple-color);
+  color: var(--white);
+  font-family: var(--font-family);
+}
+.product-hero img {
+  height: 300px;
+  width: 300px;
+}
+.product-hero p {
+  font-size: 14px;
+}
+
+/* sign up styling */
+.signup {
+  font-family: var(--font-family);
+}
+.signup h3 {
+  color: var(--purple-color);
+  font-weight: 700;
+}
+.signup p {
+  font-size: 12px;
+}
+.signup-body {
+  background-color: var(--light-purple);
+  border-bottom-left-radius: 2cm;
+}
+.signup-body input {
+  width: 500px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+}
+.signup-body button {
+  width: 250px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--purple-color);
+  color: var(--white);
+  font-size: 22px;
+  font-weight: 500;
+}
+.signup-body {
+  color: var(--purple-color);
+}
+/* sytling of sign in */
+.signin {
+  font-family: var(--font-family);
+}
+.signin h3 {
+  color: var(--purple-color);
+  font-weight: 700;
+}
+.signin p {
+  font-size: 12px;
+}
+.signin-body {
+  background-color: var(--light-purple);
+  border-bottom-left-radius: 2cm;
+}
+.signin-body input {
+  width: 500px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+}
+.signin-body button {
+  width: 250px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--purple-color);
+  color: var(--white);
+  font-size: 22px;
+  font-weight: 500;
+}
+.signin-body {
+  color: var(--purple-color);
+}
+/* styling of About us page */
+.aboutus {
+  font-family: var(--font-family);
+}
+.aboutOneBody {
+  background-color: var(--purple-color);
+  color: var(--white);
+}
+.aboutOneBody img {
+  width: 35%;
+}
+.aboutTwo {
+  color: var(--purple-color);
+}
+.aboutTwo h4 {
+  font-size: 35px;
+  font-weight: 700;
+}
+.aboutTwo p {
+  text-align: center;
+}
+.aboutThree {
+  background-color: var(--light-purple);
+  color: var(--purple-color);
+}
+.aboutThree img {
+  width: 320px;
+
+  height: auto;
+}
+.aboutThree h4 {
+  font-size: 35px;
+  font-weight: 700;
+}
+.aboutThree p {
+  font-weight: 700;
+}
+.aboutFour {
+  font-family: var(--font-family);
+}
+.aboutFour h4 {
+  color: var(--purple-color);
+  font-size: 35px;
+  font-weight: 700;
+}
+.aboutFour p {
+  font-size: 14px;
+}
+.abt-four-one {
+  background-color: var(--light-purple);
+  color: var(--white);
+}
+.abt-four-two {
+  background-color: #c081c3;
+  color: var(--white);
+}
+.abt-four-three {
+  background-color: var(--purple-color);
+  color: var(--white);
+}
+.aboutFour img {
+  /* width: 1000px;
+  height: 500px */
+  max-width: 100%;
+  height: auto;
+}
+.abt-four {
+  flex: 1;
+}
+
+/* styling of Blog page */
+.blogPage {
+  color: var(--purple-color);
+  font-family: var(--font-family);
+}
+.blogPage h3 {
+  font-size: 35px;
+  font-weight: 700;
+}
+.blog-one h4 {
+  /* text-align: center; */
+}
+.blog-one p {
+  text-align: center;
+  font-size: 16px;
+}
+.blog-one h4 {
+  font-size: 25px;
+  font-weight: 700;
+}
+.blog-one img {
+  width: 500px;
+  height: auto;
+}
+.blog-three img {
+  width: 320px;
+  height: auto;
+}
+.blog-btn button {
+  width: 130px;
+  height: 40px;
+  border: none;
+  background-color: var(--purple-color);
+  color: white;
+  border-radius: 5px;
+}
+.blog-contact {
+  background-color: var(--light-purple);
+  color: var(--purple-color);
+}
+.blog-two p {
+  text-align: center;
+}
+.blog-three p {
+  font-weight: 700;
+  font-size: 14px;
+}
+/* styling of Help */
+.helpPage {
+  font-family: var(--font-family);
+  color: var(--purple-color);
+}
+.helpPage img {
+  width: 50%;
+}
+.help-one {
+  background-color: var(--purple-color);
+  border-right-width: 30px;
+}
+.help-one h4 {
+  font-size: 50px;
+  color: white;
+}
+.help-input input {
+  border-radius: 12px;
+  border: solid 3px var(--light-purple);
+  outline: none;
+  color: var(--purple-color);
+}
+.help-two {
+  color: var(--purple-color);
+}
+.help-div-1 {
+  background-color: var(--light-purple);
+  color: var(--purple-color);
+  width: fit-content;
+  overflow-y: scroll;
+}
+.help-div-2 {
+  background-color: white;
+  width: fit-content;
+}
+.help-div-1 input {
+  border-radius: 10px;
+  border: solid 3px var(--light-purple);
+  outline: none;
+  color: var(--purple-color);
+}
+.help-four {
+  width: fit-content;
+}
+.input-design::placeholder {
+  color: var(--light-purple);
+  text-decoration: var(--light-purple);
+}
+.accordion-header h4 {
+  /* background-color: white; */
+  color: var(--purple-color);
+}
+.accordion-body button {
+  background-color: white;
+}
+.accordion-body {
+  background-color: white;
+  color: var(--purple-color);
+  outline: none;
+}
+
+/* styling of Dashboard */
+
+/* styling of aside  */
+.aside {
+  font-family: var(--font-family);
+  background-color: var(--purple-color);
+  width: 20%;
+  height: 100vh;
+  position: fixed;
+}
+
+.aside-logo {
+  background-color: var(--white);
+  color: var(--purple-color);
+  border-radius: 5px;
+  /* height: 40px;
+  width: 180px; */
+  
+}
+
+.link-style {
+  text-decoration: none;
+}
+.aside-logo img {
+  width: 50px;
+  height: 45px;
+}
+.aside-logo p {
+  font-size: 22px;
+  font-weight: 600;
+}
+.aside-dash {
+  background-color: var(--white);
+  color: var(--purple-color);
+  border-radius: 5px;
+  /* height: 40px;
+  width: 180px; */
+}
+.aside-dash p {
+  font-size: 16px;
+  font-weight: 600;
+}
+.aside button {
+  background-color: var(--purple-color);
+  color: var(--white);
+}
+.btn3 button {
+  padding-top: 320px;
+}
+.aside-nav {
+  font-family: var(--font-family);
+  color: var(--purple-color);
+  width: 100%;
+}
+.body-nav {
+  width: 80%;
+  position: absolute;
+  right: 0;
+}
+.circle {
+  width: 40px;
+}
+.aside-sec h6 {
+  font-weight: 700;
+  font-size: 18px;
+}
+.aside-sec p {
+  font-size: 15px;
+}
+.aside-sec img {
+  height: 15px;
+  width: 10px;
+}
+/* styling of dashboard */
+.dashboard {
+  font-family: var(--font-family);
+}
+.dashboard button {
+  background-color: var(--purple-color);
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
+.dash {
+  background-color: var(--purple-color);
+  color: var(--white);
+  border-radius: 5px;
+  width: 220px;
+  height: 120px;
+}
+.dashboard img {
+  width: 20px;
+}
+.dash-one {
+  background-color: var(--purple-color);
+  color: var(--white);
+  border-radius: 5px;
+}
+.transaction-history h6 {
+  color: var(--purple-color);
+  font-weight: 600;
+}
+.transaction {
+  background-color: var(--purple-color);
+  color: white;
+  border-radius: 5px;
+}
+.transaction span {
+  font-size: 10px;
+  width: max-content;
+}
+.transaction-one {
+  background-color: var(--purple-color);
+  color: white;
+  border-radius: 5px;
+}
+.transaction-one span {
+  font-size: 10px;
+  width: max-content;
+}
+.transaction-two {
+  background-color: var(--purple-color);
+  color: white;
+  border-radius: 5px;
+}
+.transaction-two span {
+  font-size: 10px;
+  width: max-content;
+}
+.bar-chart{
+  height: 200px;
+  width: 250px;
+  border: solid 2px red;
+  border-top: none;
+  border-right: none;
+}
+.bar-chart-one{
+height: 200px;
+width: 50px;
+background-color: blue;
+}
+/* styling of Account settings  */
+.settings {
+  font-family: var(--font-family);
+  color: var(--purple-color);
+  width: 80%;
+  position: absolute;
+  right: 0;
+}
+.settings img {
+  width: 50%;
+}
+.acc-sett {
+  border: 2px solid var(--purple-color);
+  border-radius: 5px;
+}
+.account-position{
+  position: relative;
+}
+.settings button {
+  background-color: var(--purple-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 15px;
+  font-size: 12px;
+}
+/* styling of History */
+.history {
+  font-family: var(--font-family);
+}
+.history h6 {
+  color: var(--purple-color);
+}
+.history-sec {
+  background-color: var(--purple-color);
+  color: white;
+  border-radius: 5px;
+}
+.history-body {
+  color: var(--purple-color);
+}
+.history p{
+font-size: 18px;
+}
+/* styling of settings */
+.settings{
+  width: 80%;
+}
+/* stylying of InProgress */
+.progressBody{
+  width: 80%;
+  position: absolute;
+  right: 0;
+  font-family: var(--font-family);
+  color: var(--purple-color);
+}
+.progImg img{
+  /* width: 10px; */
+  height: 15px;
+  aspect-ratio: 1/1;
+}
+.progressSection{
+  background-color: var(--purple-color);
+  color:var(--white);
+  margin: 1rem 5rem;
+}
+.progHouse{
+width: 20%;
+}
+.progHouse img{
+  width: 100%;
+}
+.progHead img{
+  height:10px ;
+}
+.progressSection button{
+border: none;
+border-radius: 5px;
+color: var(--purple-color);
+padding: 5px 10px;
+font-size: 12px;
+}
+.progressSection p{
+font-size: 12px;
+}
+.progFooter{
+  background-color: var(--purple-color);
+  color: var(--white);
+  font-size: 12px;
+  margin: 1rem 5rem;
+}
+.progFooter img{
+  height: 10px;
+}
