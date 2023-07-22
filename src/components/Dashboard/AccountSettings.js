@@ -1,11 +1,16 @@
 import Aside from "./Aside";
 import img from "../../Images/Ellipse 64.png";
-import ModalOne from "./Modals/ModalOne";
-import ModalTwo from "./Modals/ModalTwo";
 import { useState } from "react";
+import AccountModal from "./Modals/AccountModal";
+// import ModalTwo from "./Modals/ProfileModal";
+// import ModalThree from "./Modals/NotifiyModal";
+import ModalSix from "./Modals/StoryModal";
+import ModalSeven from "./Modals/ContactUsModal";
+
 const AccountSettings = () => {
   const [openModal, setOpenModal] = useState(false);
-
+  const [openModalSix, setOpenModalSix] = useState(false);
+  const [openModalSeven, setOpenModalSeven] = useState(false);
   return (
     <div className="">
       <div className="">
@@ -37,12 +42,20 @@ const AccountSettings = () => {
               >
                 My Account
               </button>
-              <button>My Story</button>
-              <button>Contact Us</button>
+              <button
+                onClick={() => {
+                  setOpenModalSix(true);
+                }}
+              >
+                My Story
+              </button>
+              <button onClick={()=>{setOpenModalSeven(true)}}>Contact Us</button>
               <button>Log Out</button>
             </div>
           </div>
-          {openModal && <ModalOne closeModal={setOpenModal}/>}
+          {openModal && <AccountModal closeModal={setOpenModal} />}
+          {openModalSix && <ModalSix closeModalSix={setOpenModalSix}/>}
+          {openModalSeven && <ModalSeven closeModalSeven={setOpenModalSeven}/>}
         </section>
       </div>
     </div>

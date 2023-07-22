@@ -6,9 +6,16 @@ import img3 from "../../../Images/smile.png";
 import img4 from "../../../Images/lock.png";
 import img5 from "../../../Images/story.png";
 import { useState } from "react";
-import ModalTwo from "./ModalTwo";
-const ModalOne = ({ closeModal }) => {
+import ModalTwo from "./ProfileModal";
+import ModalThree from "./NotifiyModal";
+import ModalFour from "./NextofKinModal";
+import ModalFive from "./PswModal";
+
+const AccountModal = ({ closeModal }) => {
   const [openModalTwo, setModalTwo] = useState(false);
+  const [openModalThree, setModalThree] = useState(false);
+  const [openModalFour, setModalFour] = useState(false);
+  const [openModalFive, setModalFive] = useState(false);
   return (
     <div>
       <div className={style.modalOneCon}>
@@ -27,9 +34,9 @@ const ModalOne = ({ closeModal }) => {
                 <img className="" src={img1} alt="" />
               </div>
               <p
-                 onClick={() => {
-                   setModalTwo(true);
-                 }}
+                onClick={() => {
+                  setModalTwo(true);
+                }}
               >
                 Profile settings
               </p>
@@ -39,21 +46,31 @@ const ModalOne = ({ closeModal }) => {
               <div className={style.modalOneImg}>
                 <img className="" src={img2} alt="" />
               </div>
-              <p>Notification Settings</p>
+              <p
+                onClick={() => {
+                  setModalThree(true);
+                }}
+              >
+                Notification Settings
+              </p>
             </div>
 
             <div className={style.modalInput}>
               <div className={style.modalOneImg}>
                 <img className="" src={img3} alt="" />
               </div>
-              <p>Next of Kin Settings</p>
+              <p onClick={()=>{
+                setModalFour(true)
+              }}>Next of Kin Settings</p>
             </div>
 
             <div className={style.modalInput}>
               <div className={style.modalOneImg}>
                 <img className="" src={img4} alt="" />
               </div>
-              <p>Password Settings</p>
+              <p  onClick={()=>{
+                setModalFive(true)
+              }}>Password Settings</p>
             </div>
 
             <div className={style.modalInput}>
@@ -70,8 +87,11 @@ const ModalOne = ({ closeModal }) => {
         </div>
       </div>
       {openModalTwo && <ModalTwo closeModalTwo={setModalTwo} />}
+      {openModalThree && <ModalThree closeModalThree={setModalThree} />}
+      {openModalFour &&<ModalFour closeModalFour={setModalFour}/> }
+    {openModalFive && <ModalFive closeModalFive={setModalFive}/>}
     </div>
   );
 };
 
-export default ModalOne;
+export default AccountModal;
